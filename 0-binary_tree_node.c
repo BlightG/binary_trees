@@ -1,5 +1,4 @@
 #include "binary_trees.h"
-
 /**
  * binary_tree_node - creates a new node using the structure
  *                    @binary_tree_t defined in the header
