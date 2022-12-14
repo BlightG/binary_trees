@@ -134,7 +134,7 @@ Write a function that goes through a binary tree using post-order traversal
 - If `tree` or `func` is `NULL`, do nothing
 - **Complied Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 8-main.c 8-binary_tree_postorder.c 0-binary_tree_node.c -o 8-post`
 
-###9. Height
+### 9. Height
 
 Write a function that measures the height of a binary tree
 
@@ -142,3 +142,12 @@ Write a function that measures the height of a binary tree
 - Where `tree` is a pointer to the root node of the tree to measure the height.
 - If `tree` is `NULL`, your function must `return` 0
 - **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 9-binary_tree_height.c 9-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 9-height`
+
+### 10. Depth
+
+Write a function that measures the depth of a node in a binary tree
+
+- **Prototype**: `size_t binary_tree_depth(const binary_tree_t *tree);`
+- Where `tree` is a pointer to the node to measure the depth
+- If `tree` is `NULL`, your function must `return` (`0`)
+- **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 10-binary_tree_depth.c 10-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 10-depth`
