@@ -103,3 +103,13 @@ Write a function that checks if a given node is a root
 - Your function must return 1 if node is a root, otherwise 0
 - If node is NULL, return 0
 - compiled using: gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 5-binary_tree_is_root.c 5-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 5-root
+
+### 6. Pre-order traversal
+
+Write a function that goes through a binary tree using pre-order traversal
+
+- Prototype: void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
+- Where tree is a pointer to the root node of the tree to traverse
+- And func is a pointer to a function to call for each node. The value in the node must be passed as a parameter to this function.
+- If tree or func is NULL, do nothing
+- compiled using: gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 6-main.c 6-binary_tree_preorder.c 0-binary_tree_node.c -o 6-pre
