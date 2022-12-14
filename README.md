@@ -160,3 +160,13 @@ Write a function that measures the size of a binary tree
 - Where `tree` is a pointer to the root node of the tree to measure the size
 - If `tree` is `NULL`, the function must `return` (`0`)
 - **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 11-binary_tree_size.c 11-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 11-size`
+
+### 12. Leaves
+
+Write a function that counts the leaves in a binary tree
+
+- **Prototype**: `size_t binary_tree_leaves(const binary_tree_t *tree);`
+- Where `tree` is a pointer to the root node of the tree to count the number of leaves
+- If `tree` is `NULL`, the function must `return 0`
+- A `NULL` pointer is not a leaf
+- **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 12-binary_tree_leaves.c 12-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 12-leaves`
