@@ -151,3 +151,12 @@ Write a function that measures the depth of a node in a binary tree
 - Where `tree` is a pointer to the node to measure the depth
 - If `tree` is `NULL`, your function must `return` (`0`)
 - **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 10-binary_tree_depth.c 10-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 10-depth`
+
+### 11. Size
+
+Write a function that measures the size of a binary tree
+
+- **Prototype**: `size_t binary_tree_size(const binary_tree_t *tree);`
+- Where `tree` is a pointer to the root node of the tree to measure the size
+- If `tree` is `NULL`, the function must `return` (`0`)
+- **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 11-binary_tree_size.c 11-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 11-size`
