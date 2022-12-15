@@ -198,3 +198,12 @@ Write a function that checks if a binary tree is full
 - Where **tree** is a pointer to the root node of the tree to check
 - If _tree_ is **NULL**, your function must _return 0_
 - **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 15-binary_tree_is_full.c 15-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 15-full`
+
+### 16. Is perfect
+
+Write a function that checks if a binary tree is perfect
+
+- **Prototype**: `int binary_tree_is_perfect(const binary_tree_t *tree);`
+- Where **tree** is a pointer to the root node of the tree to check
+- If **tree** is **NULL**, your function must **return 0**
+- **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 16-binary_tree_is_perfect.c 16-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 16-perfect`

@@ -1,6 +1,10 @@
 #include "binary_trees.h"
 /**
- * 
+ * binary_tree_is_full - checks if a binary tree is full
+ *
+ * @tree: root Node of binary tree
+ *
+ * Return: 1 if binary tree is full or 0 tree is not full or NULL
 */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
@@ -15,13 +19,13 @@ int binary_tree_is_full(const binary_tree_t *tree)
         if (tree->right)
 		right_check = binary_tree_is_full(tree->right);
 
-        
+
         /* if subtree is not full return 0 */
         if (left_check == 0 || right_check == 0)
                 return (0);
 
         /**
-         * check if node has left and right nodes 
+         * check if node has left and right nodes
          * if either is missing return 0
          * if both are missing return 1
         */
@@ -29,6 +33,6 @@ int binary_tree_is_full(const binary_tree_t *tree)
                 return (1);
         else if (tree->left == NULL && tree->right == NULL)
                 return (1);
-        else
-                return (0);
+
+        return (0);
 }
