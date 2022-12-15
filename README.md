@@ -180,3 +180,12 @@ Write a function that counts the nodes with at least 1 child in a binary tree
 - If `tree` is `NULL`, the function must `return 0`
 - A `NULL` pointer is not a node
 - **Complied Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 13-binary_tree_nodes.c 13-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 13-nodes`
+
+### 14. Balance factor
+
+Write a function that measures the balance factor of a binary tree
+
+- **Prototype**: `int binary_tree_balance(const binary_tree_t *tree);`
+- Where `tree` is a pointer to the root node of the tree to measure the balance factor
+- If `tree` is `NULL`, _return 0_
+- **Compiled Uing**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 14-binary_tree_balance.c 14-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c 1-binary_tree_insert_left.c -o 14-balance`
