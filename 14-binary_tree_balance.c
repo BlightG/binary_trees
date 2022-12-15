@@ -1,7 +1,10 @@
 #include "binary_trees.h"
-
 /**
+ * tree_height - a function that can return height of a tree
  *
+ * @tree: node to calculates height from
+ *
+ * Return: height of tree starting from @tree to the furthest leaf
 */
 int tree_height(const binary_tree_t *tree);
 int tree_height(const binary_tree_t *tree)
@@ -29,6 +32,13 @@ int tree_height(const binary_tree_t *tree)
         else
                 return (height_conut_right);
 }
+/**
+ * binary_tree_balance: checks how balanced a node on a binary tree is
+ * 
+ * @tree: node to be checked for balance
+ * 
+ * Return: difference in height between left and right or 0 if tree is NULL
+*/
 int binary_tree_balance(const binary_tree_t *tree)
 {
         int left_node_count, right_node_count, balance_factor;

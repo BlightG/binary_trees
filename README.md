@@ -189,3 +189,12 @@ Write a function that measures the balance factor of a binary tree
 - Where `tree` is a pointer to the root node of the tree to measure the balance factor
 - If `tree` is `NULL`, _return 0_
 - **Compiled Uing**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 14-binary_tree_balance.c 14-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c 1-binary_tree_insert_left.c -o 14-balance`
+
+### 15. Is full
+
+Write a function that checks if a binary tree is full
+
+- **Prototype**: `int binary_tree_is_full(const binary_tree_t *tree);`
+- Where **tree** is a pointer to the root node of the tree to check
+- If _tree_ is **NULL**, your function must _return 0_
+- **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 15-binary_tree_is_full.c 15-main.c 0-binary_tree_node.c 2-binary_tree_insert_right.c -o 15-full`
