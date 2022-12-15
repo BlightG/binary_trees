@@ -33,7 +33,7 @@ int tree_height(const binary_tree_t *tree)
 		return (height_conut_right);
 }
 /**
- * binary_tree_balance: checks how balanced a node on a binary tree is
+ * binary_tree_balance - checks how balanced a node on a binary tree is
  *
  * @tree: node to be checked for balance
  *

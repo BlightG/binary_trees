@@ -40,9 +40,9 @@ binary_tree_t *tree_sibling(binary_tree_t *node)
 
 /**
  * binary_tree_uncle - finds the uncle of @node if it exists
- * 
+ *
  * @node: node to search uncle for
- * 
+ *
  * Return: return pointer to unlce node or NULL
 */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
