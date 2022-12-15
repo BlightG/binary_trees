@@ -42,7 +42,7 @@ int tree_height(const binary_tree_t *tree)
 int tree_is_full(const binary_tree_t *tree);
 int tree_is_full(const binary_tree_t *tree)
 {
-        int left_check, right_check;
+        int left_check = 1, right_check = 1;
         /* if tree is NULL return 0 */
         if (!tree)
                 return (0);
