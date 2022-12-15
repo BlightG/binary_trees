@@ -20,11 +20,10 @@ int tree_height(const binary_tree_t *tree)
 
 	/* if there is a left node add 1 to height _count_left*/
 	/* else if there is right node add 1 to height_count_right*/
-	if (tree->left || tree->right)
-	{
+	if (tree->left)
 		height_conut_left = tree_height(tree->left) + 1;
+	if (tree->right)
 		height_conut_right = tree_height(tree->right) + 1;
-	}
 
 	/* return the biggest between the right and left count */
 	if (height_conut_left > height_conut_right)
