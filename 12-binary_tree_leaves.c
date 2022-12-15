@@ -1,10 +1,10 @@
 #include "binary_trees.h"
 /**
  * binary_tree_leaves - prints the number of leafs
- * 			starting from @tree node
- * 
+ *			starting from @tree node
+ *
  * @tree: node of tree to start counting from
- * 
+ *
  * Return: returns the number of leafs or 0
 */
 size_t binary_tree_leaves(const binary_tree_t *tree)
