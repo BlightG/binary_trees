@@ -218,3 +218,14 @@ Write a function that finds the sibling of a node
 - If _node_ is _NULL_ or the _parent_ is _NULL_, **return NULL**
 - If _node_ has no sibling, **return NULL**
 - **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 17-main.c 17-binary_tree_sibling.c 0-binary_tree_node.c -o 17-sibling`
+
+### 18. Uncle
+
+Write a function that finds the uncle of a node
+
+- **Prototype**: `binary_tree_t *binary_tree_uncle(binary_tree_t *node);`
+- Where **node** is a pointer to the node to find the uncle
+- Your function must return a pointer to the uncle node
+- If _node_ is _NULL_, **return NULL**
+- If _node_ has _no uncle_, **return NULL**
+- **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 18-main.c 18-binary_tree_uncle.c 0-binary_tree_node.c -o 18-uncle`
