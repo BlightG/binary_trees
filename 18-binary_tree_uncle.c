@@ -48,13 +48,13 @@ binary_tree_t *tree_sibling(binary_tree_t *node)
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 
-        /* checks if @node is NULL */
-        if (!node)
-                return (NULL);
+	/* checks if @node is NULL */
+	if (!node)
+		return (NULL);
 
-        /* check if @node has parent */
-        if (!node->parent)
-                return (NULL);
+	/* check if @node has parent */
+	if (!node->parent)
+		return (NULL);
 
-        return (tree_sibling(node->parent));
+	return (tree_sibling(node->parent));
 }
