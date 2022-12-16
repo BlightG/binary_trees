@@ -72,6 +72,8 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 			/* when you find a mathcing node stop looping back*/
 			if (temp_1 == temp_2)
 				return (temp_1);
+			else if (temp_1->parent == temp_2->parent)
+				return (temp_1->parent);
 			temp_1 = temp_1->parent;
 			temp_2 = temp_2->parent;
 		}
