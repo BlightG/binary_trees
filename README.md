@@ -229,3 +229,14 @@ Write a function that finds the uncle of a node
 - If _node_ is _NULL_, **return NULL**
 - If _node_ has _no uncle_, **return NULL**
 - **Compiled Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 18-main.c 18-binary_tree_uncle.c 0-binary_tree_node.c -o 18-uncle`
+
+### 19. Lowest common ancestor
+
+Write a function that finds the lowest common ancestor of two nodes
+
+- **Prototype**: `binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second);`
+- Where **first** is a pointer to the first node
+- And **second** is a pointer to the second node
+- Your function must return a pointer to the lowest common ancestor node of the two given nodes
+- If no common ancestor was found, your function must return **NULL**
+- **Complied Using**: `gcc -Wall -Wextra -Werror -pedantic binary_tree_print.c 100-main.c 100-binary_trees_ancestor.c 0-binary_tree_node.c -o 100-ancestor`
