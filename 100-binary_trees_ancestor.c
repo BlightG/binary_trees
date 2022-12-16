@@ -21,9 +21,15 @@ size_t bin_tree_depth(const binary_tree_t *tree)
 	return (tree_depth);
 }
 /**
+ * binary_trees_ancestor - a funciton to find the least 
+ * 			   common ancestor of two nodes
+ * @first: first node to compare
+ * @second: second node to compare
  * 
+ * Return: returns a common ancestor or null
 */
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t *binary_trees_ancestor(
+	const binary_tree_t *first, const binary_tree_t *second)
 {
 	binary_tree_t *temp_1, *temp_2;
 	size_t first_depth, second_depth;
@@ -43,7 +49,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 	if (depth_diff > 0)
 	{
 		i = depth_diff;
-		while(i > 0)
+		while (i > 0)
 		{
 			temp_1 = temp_1->parent;
 			i--;
@@ -52,7 +58,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 	else if (depth_diff < 0)
 	{
 		i = depth_diff * -1;
-		while(i > 0)
+		while (i > 0)
 		{
 			temp_2 = temp_2->parent;
 			i--;
@@ -63,20 +69,18 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tr
 	/* else do a loop backwards in the tree */
 	if (first == second)
 		return (temp_1);
-	else if(first->parent == second->parent)
+	else if (first->parent == second->parent)
 		return (first->parent);
-	else
+	
+	while (temp_1->parent && temp_2->parent)
 	{
-		while (temp_1->parent && temp_2->parent)
-		{
-			/* when you find a mathcing node stop looping back*/
-			if (temp_1 == temp_2)
-				return (temp_1);
-			else if (temp_1->parent == temp_2->parent)
-				return (temp_1->parent);
-			temp_1 = temp_1->parent;
-			temp_2 = temp_2->parent;
-		}
+		/* when you find a mathcing node stop looping back*/
+		if (temp_1 == temp_2)
+			return (temp_1);
+		else if (temp_1->parent == temp_2->parent)
+			return (temp_1->parent);
+		temp_1 = temp_1->parent;
+		temp_2 = temp_2->parent;
 	}
 	return (NULL);
 }
