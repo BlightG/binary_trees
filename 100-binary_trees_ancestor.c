@@ -20,12 +20,12 @@ size_t bin_tree_depth(const binary_tree_t *tree)
 
 	return (tree_depth);
 }
-
 /**
  * match_depth_diff - a function to makethe depth b/n two nodes is the same
  *
- * @temp_1: first node to have depth adjusted
- * @temp_2: second node to have depth adjusted
+ * @first: first node to have depth adjusted
+ * @second: second node to have depth adjusted
+ *
 */
 void match_depth_diff(binary_tree_t **, binary_tree_t **);
 void match_depth_diff(binary_tree_t **first, binary_tree_t **second)
@@ -67,7 +67,7 @@ void match_depth_diff(binary_tree_t **first, binary_tree_t **second)
 }
 /**
  * binary_trees_ancestor - a funciton to find the least
- * 			   common ancestor of two nodes
+ *			   common ancestor of two nodes
  * @first: first node to compare
  * @second: second node to compare
  *
