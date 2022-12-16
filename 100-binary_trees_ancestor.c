@@ -27,7 +27,7 @@ size_t bin_tree_depth(const binary_tree_t *tree)
  * @second: second node to have depth adjusted
  *
 */
-void match_depth_diff(binary_tree_t **, binary_tree_t **);
+void match_depth_diff(binary_tree_t **first, binary_tree_t **second);
 void match_depth_diff(binary_tree_t **first, binary_tree_t **second)
 {
 	binary_tree_t *temp_1, *temp_2;
